@@ -1,1 +1,1 @@
-# E_Marker
+# django-E_COMMERCE
