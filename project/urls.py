@@ -18,12 +18,12 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from products.views import ProductsList , ProductsDetail
+from products.views import product_list,product_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('products/',ProductsList.as_view()),
-    path('products/<int:pk>/',ProductsDetail.as_view()),
+    path('product/',product_list),
+    path('product/<int:id>/',product_detail),
 
 ]
 
